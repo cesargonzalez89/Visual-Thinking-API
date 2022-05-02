@@ -1,5 +1,5 @@
 const StudentService = require("./../../lib/services/StudentService");
-const Reader = require('./../../lib/utils/reader');
+const Reader = require("./../../lib/utils/reader");
 describe("Tests para StudentService", () => {
     test("Requerimiento 1: Obtener la cantidad de estudiantes", () => {
         const students = [{name: "Warren"}];
@@ -20,7 +20,7 @@ describe("Tests para StudentService", () => {
     });
 
     test("Requerimiento 4: consultar todos los estudiantes que tengan credits mayor a 500.", () => {
-        const students = Reader.readJsonFile('visualpartners.test.json');
+        const students = Reader.readJsonFile("visualpartners.test.json");
         const studentsService = StudentService.getStudentsWithCredits(students);
         expect(studentsService.length).toStrictEqual(3);
     });

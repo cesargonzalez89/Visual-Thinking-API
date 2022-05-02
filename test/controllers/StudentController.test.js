@@ -1,5 +1,4 @@
 const StudentController = require("./../../lib/controllers/StudentController");
-const Reader = require('./../../lib/utils/reader');
 
 describe("Tests para StudentController", () => {
     test("Requerimiento 1: Obtener la cantidad de estudiantes", () => {
