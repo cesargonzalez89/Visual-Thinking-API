@@ -20,7 +20,6 @@ describe("Tests para StudentService", () => {
     });
 
     test("Requerimiento 4: consultar todos los estudiantes que tengan credits mayor a 500.", () => {
-        //const students = [{name: "Warren", email: "Todd@visualpartnership.xyz", haveCertification: true}, {name: "Lucinda", email: "Sexton@visualpartnership.xyz",haveCertification: true}, {name: "Phillips", email: "Camacho@visualpartnership.xyz", haveCertification: false}];
         const students = Reader.readJsonFile('visualpartners.test.json');
         const studentsService = StudentService.getStudentsWithCredits(students);
         expect(studentsService.length).toStrictEqual(3);
